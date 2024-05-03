@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gabriela Bernardo Pasqualotto - Curriculum Vitae</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  h2 {
+    text-decoration: underline;
+  }
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+  }
+  th {
+    background-color: #ccc;
+  }
+  /* Estilos para os botões */
+  button {
+    background-color: #4CAF50; /* Verde */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #45a049; /* Verde mais escuro */
+  }
+</style>
+</head>
+<body>
+<h1>Gabriela Bernardo Pasqualotto</h1>
+
+<button id="dadosPessoais">Dados Pessoais</button>
+<div id="dadosPessoaisContent" style="display:none;">
+  <h2>Dados Pessoais</h2>
+  <table>
+    <tr>
+      <th>Nome:</th>
+      <td>Gabriela Bernardo Pasqualotto</td>
+    </tr>
+    <tr>
+      <th>Idade:</th>
+      <td>16 anos</td>
+    </tr>
+    <tr>
+      <th>Endereço:</th>
+      <td>Bacacheri/Curitiba</td>
+    </tr>
+    <tr>
+      <th>Email:</th>
+      <td><a href="mailto:gabriela.pasqualotto@escola.pr.gov.br">gabriela.pasqualotto@escola.pr.gov.br</a></td>
+    </tr>
+    <tr>
+      <th>Telefone:</th>
+      <td>+55 41 9 9625 0373</td>
+    </tr>
+  </table>
+</div>
+
+<button id="experienciaProfissional">Experiência Profissional</button>
+<div id="experienciaProfissionalContent" style="display:none;">
+  <h2>Experiência Profissional</h2>
+  <p><strong>Conab Auxiliar Administrativo</strong></p>
+</div>
+
+<button id="educacao">Educação</button>
+<div id="educacaoContent" style="display:none;">
+  <h2>Educação</h2>
+  <ul>
+    <li>Colégio Estadual do Paraná - Ensino Fundamental - 2019 a 2023</li>
+    <li>Colégio Estadual do Paraná - Ensino Profissionalizante em Desenvolvimento de Sistemas - 2023 a 2025</li>
+  </ul>
+</div>
+
+<button id="informacoesAdicionais">Informações Adicionais</button>
+<div id="informacoesAdicionaisContent" style="display:none;">
+  <h2>Informações Adicionais</h2>
+  <p>Tem interesse em atuar em qualquer área de acordo com a necessidade da companhia, desejo ampliar meus conhecimentos, certo que levarei uma boa contribuição à empresa, procuro novos desafios profissionais e uma efetivação no mercado de trabalho, contribuindo para o crescimento da empresa.</p>
+  <ul>
+    <li>Informática Básica</li>
+    <li>PowerPoint Básico</li>
+    <li>Word Intermediário</li>
+    <li>Cursando Excel Básico</li>
+  </ul>
+</div>
+
+<button id="cronogramaSemanal">Meu Cronograma Semanal</button>
+<div id="cronogramaSemanalContent" style="display:none;">
+  <h2>Meu Cronograma Semanal</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Horário</th>
+        <th>Segunda</th>
+        <th>Terça</th>
+        <th>Quarta</th>
+        <th>Quinta</th>
+        <th>Sexta</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>07:00 - 07:30</td>
+        <td colspan="5">Acordo e me arrumo</td>
+      </tr>
+      <tr>
+        <td>07:30 - 08:00</td>
+        <td colspan="5">Pego ônibus</td>
+      </tr>
+      <tr>
+        <td>08:00 - 09:00</td>
+        <td colspan="5">Chego no trabalho</td>
+      </tr>
+      <tr>
+        <td>09:00 - 10:00</td>
+        <td colspan="5">Trabalho</td>
+      </tr>
+      <tr>
+        <td>10:00 - 11:00</td>
+        <td colspan="5">Trabalho</td>
+      </tr>
+      <tr>
+        <td>11:00 - 12:00</td>
+        <td colspan="5">Trabalho</td>
+      </tr>
+      <tr>
+        <td>12:00 - 12:30</td>
+        <td colspan="5">Sair do trabalho</td>
+      </tr>
+      <tr>
+        <td>12:30 - 13:00</td>
+        <td colspan="5">Almoço</td>
+      </tr>
+      <tr>
+        <td>13:00 - 14:00</td>
+        <td colspan="5">Entrar no colégio</td>
+      </tr>
+      <tr>
+        <td>14:00 - 15:00</td>
+        <td colspan="5">Estudo</td>
+      </tr>
+      <tr>
+        <td>15:00 - 16:00</td>
+        <td colspan="5">Intervalo</td>
+      </tr>
+      <tr>
+        <td>16:00 - 17:00</td>
+        <td colspan="5">Estudo</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<script>
+  document.getElementById("dadosPessoais").addEventListener("click", function() {
+    document.getElementById("dadosPessoaisContent").style.display = "block";
+    document.getElementById("experienciaProfissionalContent").style.display = "none";
+    document.getElementById("educacaoContent").style.display = "none";
+    document.getElementById("informacoesAdicionaisContent").style.display = "none";
+    document.getElementById("cronogramaSemanalContent").style.display = "none";
+  });
+
+  document.getElementById("experienciaProfissional").addEventListener("click", function() {
+    document.getElementById("dadosPessoaisContent").style.display = "none";
+    document.getElementById("experienciaProfissionalContent").style.display = "block";
+    document.getElementById("educacaoContent").style.display = "none";
+    document.getElementById("informacoesAdicionaisContent").style.display = "none";
+    document.getElementById("cronogramaSemanalContent").style.display = "none";
+  });
+
+  document.getElementById("educacao").addEventListener("click", function() {
+    document.getElementById("dadosPessoaisContent").style.display = "none";
+    document.getElementById("experienciaProfissionalContent").style.display = "none";
+    document.getElementById("educacaoContent").style.display = "block";
+    document.getElementById("informacoesAdicionaisContent").style.display = "none";
+    document.getElementById("cronogramaSemanalContent").style.display = "none";
+  });
+
+  document.getElementById("informacoesAdicionais").addEventListener("click", function() {
+    document.getElementById("dadosPessoaisContent").style.display = "none";
+    document.getElementById("experienciaProfissionalContent").style.display = "none";
+    document.getElementById("educacaoContent").style.display = "none";
+    document.getElementById("informacoesAdicionaisContent").style.display = "block";
+    document.getElementById("cronogramaSemanalContent").style.display = "none";
+  });
+
+  document.getElementById("cronogramaSemanal").addEventListener("click", function() {
+    document.getElementById("dadosPessoaisContent").style.display = "none";
+    document.getElementById("experienciaProfissionalContent").style.display = "none";
+    document.getElementById("educacaoContent").style.display = "none";
+    document.getElementById("informacoesAdicionaisContent").style.display = "none";
+    document.getElementById("cronogramaSemanalContent").style.display = "block";
+  });
+</script>
+</body>
+</html>
